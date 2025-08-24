@@ -55,56 +55,58 @@ Shipping operations are highly sensitive to weather conditions, impacting schedu
 ## Project Structure
 MariThon-Weather-Engine-Maritime-Weather-Intelligence/
 │
-├── docs/                         # Documentation & references
-│   ├── README.md                 # Extra docs beyond root README
-│   ├── architecture-diagram.png
+├── docs/ # Documentation & references
+│ ├── README.md # Extra docs beyond root README
+│ ├── architecture-diagram.png
+│ └── api-reference.md
 │
-├── data/                         # Raw & processed weather data
-│   ├── raw/                      # Collected API or satellite raw data
-│   ├── processed/                # Cleaned datasets
-│   └── sample/                   # Small test samples for demo
+├── data/ # Raw & processed weather data
+│ ├── raw/ # Collected API or satellite raw data
+│ ├── processed/ # Cleaned datasets
+│ └── sample/ # Small test samples for demo
 │
-├── src/                          # Main source code
-│   ├── api/                      # API integrations (OpenWeather, NOAA, etc.)
-│   │   ├── openweather_api.py
-│   │   ├── noaa_api.py
-│   │   └── __init__.py
-│   │
-│   ├── core/                     # Core engine modules
-│   │   ├── alert_system.py       # Extreme weather detection
-│   │   ├── prediction_engine.py  # Forecasting logic (ML/AI models)
-│   │   ├── routing_engine.py     # Smart route optimization
-│   │   ├── performance_model.py  # Fuel & speed performance modeling
-│   │   └── __init__.py
-│   │
-│   ├── dashboard/                # UI/Visualization
-│   │   ├── app.py                # Streamlit/Flask/Django dashboard entry
-│   │   ├── components/           # Reusable UI parts
-│   │   └── static/               # CSS, JS, images
-│   │
-│   ├── utils/                    # Helper functions
-│   │   ├── logger.py
-│   │   ├── config.py
-│   │   └── data_preprocessing.py
-│   │
-│   └── main.py                   # Main entry point
+├── src/ # Source code
+│ ├── backend/ # Core engine + APIs
+│ │ ├── api/
+│ │ │ ├── openweather_api.py
+│ │ │ ├── noaa_api.py
+│ │ │ └── init.py
+│ │ ├── core/
+│ │ │ ├── alert_system.py
+│ │ │ ├── prediction_engine.py
+│ │ │ ├── routing_engine.py
+│ │ │ ├── performance_model.py
+│ │ │ └── init.py
+│ │ ├── utils/
+│ │ │ ├── logger.py
+│ │ │ ├── config.py
+│ │ │ └── data_preprocessing.py
+│ │ └── main.py
+│ │
+│ ├── frontend/ # Dashboard / UI
+│ │ ├── streamlit_app/
+│ │ │ └── app.py
+│ │ ├── web_app/
+│ │ │ ├── components/
+│ │ │ ├── static/
+│ │ │ └── index.html
+│ │ └── README.md
 │
-├── models/                       # ML/AI models
-│   ├── trained/                  # Saved trained models
-│   ├── experiments/              # Experiments & notebooks
-│   └── baseline.ipynb            # First prototype notebook
+├── models/ # ML/AI models
+│ ├── trained/
+│ ├── experiments/
+│ └── baseline.ipynb
 │
-├── tests/                        # Unit & integration tests
-│   ├── test_api.py
-│   ├── test_routing.py
-│   └── test_alerts.py
+├── tests/ # Unit & integration tests
+│ ├── test_api.py
+│ ├── test_routing.py
+│ └── test_alerts.py
 │
-├── .gitignore                    # Ignore data dumps, creds, etc.
-├── requirements.txt              # Python dependencies
-├── environment.yml               # (Optional) Conda env
+├── .gitignore
+├── requirements.txt
+├── environment.yml
 ├── LICENSE
-└── README.md                     # Root README (your current draft)
-
+└── README.md
 
 ### Content Sources
 - AI in Marine Forecasting – Marine Technology News  
