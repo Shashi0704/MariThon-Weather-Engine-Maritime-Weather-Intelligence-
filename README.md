@@ -51,8 +51,16 @@ Shipping operations are highly sensitive to weather conditions, impacting schedu
 - Decarbonization through smarter routing
 - Challenges: Data sparsity, model uncertainty
 - Future trends: Quantum computing, IoT buoys, Edge AI
-  
+
+### Content Sources
+- AI in Marine Forecasting – Marine Technology News  
+- Maritime Routing & Optimization– StormGeo  
+- Offshore Weather Analytics – Fugro  
+- Naval Applications of MWI – Naval Technology  
+- AI-Powered Forecast Engines – IBM Weather Company
+
 ## Project Structure
+```none
 MariThon-Weather-Engine-Maritime-Weather-Intelligence/
 │
 ├── docs/ # Documentation & references
@@ -108,9 +116,3 @@ MariThon-Weather-Engine-Maritime-Weather-Intelligence/
 ├── LICENSE
 └── README.md
 
-### Content Sources
-- AI in Marine Forecasting – Marine Technology News  
-- Maritime Routing & Optimization– StormGeo  
-- Offshore Weather Analytics – Fugro  
-- Naval Applications of MWI – Naval Technology  
-- AI-Powered Forecast Engines – IBM Weather Company
